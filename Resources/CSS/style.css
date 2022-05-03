@@ -1,0 +1,284 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+}
+:root{
+    /*Gradient*/
+    --Light-Magenta: hsl(293, 100%, 63%);
+    --Light-Violet: hsl(264, 100%, 61%);
+    /*Secondary*/
+    --White: hsl(0, 0%, 100%);
+    --Light-Gray-Violet: hsl(270, 20%, 96%);
+    --Dark-Violet: hsl(271, 36%, 24%);
+    --Light-Magenta: hsl(289, 100%, 72%);
+    /*Chat Bubbles*/
+    --grey-chat-bubble: hsla(291, 22%, 83%, 0.354);
+    --box-shadow: rgba(204, 204, 204, 0.467);
+    --gray-chat-text-color: hsl(296, 50%, 47%);
+    /*Paragraph text color*/
+    --paragraph-color: hsla(300, 2%, 35%, 0.461);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Light-Gray-Violet);
+}
+.background-pattern{
+    display: flex;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    min-width: 50%;
+    max-width: 50%;
+    height: 30rem;
+    position: absolute;
+    background: linear-gradient(hsl(284, 80%, 61%), hsl(274, 100%, 61%), hsl(264, 100%, 61%) 100%);
+    border-radius: 0 0 300px 0px;   
+}
+.background-pattern2{
+    display: flex;
+    height: 29rem;
+    min-width: 35%;
+    max-width: 50%;
+    right: 0;
+    margin-top: 25rem;
+    position: absolute;
+    z-index: -3;
+    border-radius: 300px 0 0 0;
+    background:rgba(214, 214, 214, 0.29)
+}
+
+/*mobile app header section */
+
+main{
+    padding: 0.625rem;
+    margin: 4rem 0rem;
+    width: 15.438rem;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 1px 3px 3px 1px var(--box-shadow);
+}
+.app-head{
+    display: flex;
+    position: relative;
+    height: 4.125rem;
+    align-items: center;
+    color: var(--White);
+    background: linear-gradient(90deg, hsl(264, 100%, 61%),hsl(293, 100%, 63%)  90%);
+    border-radius: 25px 25px 5px 5px;
+}
+.name-menu-icon h1{
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+.name-menu-icon h2{
+    font-size: 0.4rem;
+    line-height: 9px;
+    font-weight: 300;
+    color: var(--Light-Gray-Violet);
+}
+.app-head p{
+    line-height: 3px;
+}
+.app-head-content{
+    display: flex;
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+.menu-dots{
+    line-height: 0.5px;
+}
+.avatar-container{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+#avatar-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    outline: 1.5px solid #fff;
+}
+.name-menu-icon{
+    margin-right: 4rem;
+    margin-left: 0.6rem;
+}
+.less-than{
+    width:0.6rem;
+    padding-top: 0.1rem;
+    padding-right: 0.9rem;
+}
+.white-cutout{
+    width: 50%;
+    top: 0;
+    margin-left: 3.5rem;
+    height: 1rem;
+    background: var(--White);
+    border-radius: 0 0 12px 12px;
+    position: absolute;
+}
+
+/* Mobile App body */
+
+.app-body{
+    padding: 0.688rem 0.5rem;
+    border-radius: 3px 3px 25px 25px;
+    background-color: var(--Light-Gray-Violet);
+}
+.app-body p{
+    font-size: 0.5rem;
+}
+.chat-images{
+    display: flex;
+    justify-content: flex-end;
+}
+.chat-images img{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 0.5rem 0rem 0.5rem 0.4rem;
+    border-radius: 10px;
+}
+.chat-bubble-gray{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.7rem 0.5rem 0.5rem;
+    border-radius: 10px 10px 10px 2px;
+    background-color: var(--grey-chat-bubble);
+    color: var(--gray-chat-text-color);
+    width: 8.2rem;
+    margin-bottom: 0.5rem;
+}
+.chat-bubble-white{
+    display: flex;
+    max-width: 8.15rem;
+    padding: 0.5rem 0.8rem 0.5rem 0.5rem;
+    border-radius: 10px 10px 2px 10px;
+    background-color: var(--White);
+    color: hsl(276, 3%, 33%);
+    margin-bottom: 0.5rem; 
+    box-shadow: 1px 3px 3px 1px var(--box-shadow);
+}
+.chat-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.pricebox{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%) 100%);
+    width: 75%;
+    border-radius: 10px 10px 10px 2px;
+    padding: 0.6rem 0;
+    margin-bottom: 0.5rem;
+}
+.price-text h3{
+    font-size: 0.5rem;
+    font-weight: 400;
+    color: hsl(0, 0%, 100%, 0.8);
+    margin-right: 2rem;
+}
+.price-number h3{
+    color: var(--White);
+    font-size: 0.7rem;
+}
+.circle{
+    height: 12px;
+    width: 12px;
+    outline: 1px solid rgba(255, 255, 255, 0.372);
+    border-radius: 12px;
+    margin: 0 0.5rem;
+}
+.type-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: var(--White);
+    margin-top: 1rem;
+    padding: 0.3rem 0.4rem 0.3rem 0.8rem;
+    border-radius: 25px;
+}
+.type-box h4{
+    font-size: 0.6rem;
+    font-weight: 500;
+    margin-left: 0.3rem;
+    margin-top: 0.3rem;
+    margin-right: 4.5rem;
+    color: rgba(142, 142, 142, 0.362);
+}
+.enter-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    background: var(--Dark-Violet);
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.enter-button h1{
+    color: var(--White);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+/* Text Section beneath Mobile App */
+
+.text-section{
+    text-align: center;
+    width: 80%;
+}
+.text-section h1{
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 1.3rem;
+    color: var(--Dark-Violet);
+}
+.text-section p{
+    font-size: 0.9rem;
+    line-height: 22px;
+    margin-bottom: 3rem;
+    word-spacing: 2px;
+    padding: 0 3rem;
+    color: var(--paragraph-color);
+}
+
+@media only screen and (min-width: 900px){
+    body{
+        display: flex;
+        flex-direction: row;
+        align-items: none;
+        justify-content: flex-start;
+        margin-left: 27.5rem;
+        height: 100vh;
+    }
+    main{
+        margin-right: 3rem;
+        box-shadow: 0px 20px 15px 8px var(--box-shadow);
+    }
+    .text-section{
+        min-width: 10rem;
+        max-width: 32rem;
+        text-align: left;
+    }
+    .text-section h1{
+        padding: 0 3rem;
+    }
+    .background-pattern{
+        width: 35%;
+        min-width: auto;
+        border-radius: 0 0 300px 300px;
+        height: 37rem;
+    }
+    .background-pattern2{
+        height: 35rem;
+        margin-top: 7rem;
+        min-width: auto;
+        width: 30rem;
+        border-radius: 300px 300px 0 0;
+    }
+}
